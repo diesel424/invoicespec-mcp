@@ -1,0 +1,38 @@
+{
+  "name": "invoicespec-mcp",
+  "version": "1.0.0",
+  "description": "Official Model Context Protocol (MCP) server for EU E-Invoicing: validate Peppol BIS 3.0, XRechnung 3.0, ZUGFeRD 2.3 & KSeF FA(2) XML, search 1,156 EN 16931 rules, and query the live EU Peppol Directory.",
+  "type": "module",
+  "bin": {
+    "invoicespec-mcp": "./bin/invoicespec-mcp.mjs"
+  },
+  "files": [
+    "bin/",
+    "smithery.yaml",
+    "README.md"
+  ],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "peppol",
+    "en16931",
+    "xrechnung",
+    "zugferd",
+    "factur-x",
+    "ksef",
+    "e-invoicing",
+    "ubl",
+    "schematron",
+    "invoicespec"
+  ],
+  "author": "InvoiceSpec Hub <toptop4ikk@gmail.com> (https://invoicespec.dev)",
+  "license": "MIT",
+  "homepage": "https://invoicespec.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/diesel424/invoicespec-mcp"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

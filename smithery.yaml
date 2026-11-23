@@ -1,0 +1,14 @@
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      invoicespecApiKey:
+        type: string
+        description: "Optional InvoiceSpec API key (isk_live_...) for paid XML Auto-Fix and Stripe/Shopify JSON compilation. Free validation, rule search, and Peppol Directory lookup require no key."
+  commandFunction: |-
+    (config) => ({
+      command: "npx",
+      args: ["-y", "invoicespec-mcp"],
+      env: config.invoicespecApiKey ? { INVOICESPEC_API_KEY: config.invoicespecApiKey } : {}
+    })
